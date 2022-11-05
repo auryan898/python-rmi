@@ -410,7 +410,6 @@ class MessageReceiver(object):
         Set to 0 (default value) to retrieve all the messages from the buffer.
         Thread-safe.
         """
-        # Receiving messages in the listener thread for this RemoteBrick socket
         self.lock_messages.acquire()
 
         result = []
